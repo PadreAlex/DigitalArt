@@ -22,7 +22,17 @@ function setup() {
 }
 
 function draw() {
-  background(0);
+  background(30);
+  stroke(255)
+  v1 = createVector(width - 100, 30);
+  line(v1.x, v1.y, 50, 30)
+  
+  stroke(255)
+  v2 = createVector(width - 100, 30);
+  v2.rotate(82)
+  line(v2.x, v2.y, 50, 30)
+  
+  
   push()
   translate(width / 2, height / 2)
   angle = map(random(height), 0, random(width), 0, -360, 360)
